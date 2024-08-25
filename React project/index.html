@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div>hello</div>
-    
+    <div id="root">hello</div>
+    <script>
+        const h1element = document.createElement("h1")
+        h1element.innerHTML = "hello from palak"
+        const bodyele = document.querySelector("body")
+        bodyele.appendChild(h1element)
+    </script>
 </body>
+
 </html>
