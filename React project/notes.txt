@@ -28,3 +28,35 @@ after that follow given instruction -> cd react_vite_project
 
 vite project is created. copy localhost and run it on browser.
 in folder notice that the extension is app.jsx
+
+
+
+exploring file
+
+here in index.html which is outside of public folder
+root is id of div tag.
+inside this root things are getting rendered
+
+main.jsx
+will create root and render app.jsx file
+
+app.jsx
+will add element that will connect in main.jsx file and main will render and create root
+
+
+localhost:5173
+http://localhost:5173/
+
+
+difference between CRA and vite
+
+CRA
+it uses Something known as webpack(bundle of modules) 
+-> cra provides complete bundle.
+->webpack provides us everything at once,hence it makes work a little slower.
+
+
+vite
+-> vite provides partial Bundling(tree shaking conept- imagine we are shaking a tree and fruits and flowers fall down we can use those 
+of our  choice). by this concept of using of our choice makes work fast.
+*hot module replacement* (interview question) - it means what module we need we will be get served that module.
