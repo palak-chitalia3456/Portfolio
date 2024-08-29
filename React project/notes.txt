@@ -60,3 +60,14 @@ vite
 -> vite provides partial Bundling(tree shaking conept- imagine we are shaking a tree and fruits and flowers fall down we can use those 
 of our  choice). by this concept of using of our choice makes work fast.
 *hot module replacement* (interview question) - it means what module we need we will be get served that module.
+
+difference between library and framework
+library is a piece of code which we can use on small part of a whole code.
+whereas framework is a whole project/apllication itself which applies on whole project.
+
+
+*Interview topics*
+1->fundamental of js- EC,hoisting,TDZ,Closures.
+2->functional Programming - HOF->map,filter,reduce,polyfills
+3-> oop's concept- classes,constructor,this keyword,prototype and prototype inheritance can apply bind and polyfills
+4->Async - callback,promises,async await,polyfills of( promise.all,promise.any),promise methods(.all,.race,.any,.allsettled,combinators)
