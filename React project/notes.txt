@@ -1,0 +1,30 @@
+*in node_modules folder*
+@babel- babel is a transpiler(is a transformation tool). it will take jsx code to browser readable code.
+search in google about babel
+
+
+in react we call all the section in html as components
+div is an element but when we combine div,its children it became component.
+
+
+vite
+        vite is another built tool that is now new norm
+        because vite is more faster and reliable than CRA.
+        search in google vite.js
+
+setting up react app with vite and we will be working with vite only because it supports vanila,vue,lit,preact,solid,qwik 
+template/framework
+
+search vite.js and by getting started look for react code to create vite using npm.
+copy terminal code and paste by opening the specific folder you want to open vite project(or by selecting integrated terminal)
+
+enter project name after pasting npm create vite@latest this code to create vite project
+then after name you have to select frameworkyou want to work only
+we will select react
+after that select variant we will select javascript right now
+after that follow given instruction -> cd react_vite_project
+                                        npm install
+                                        npm run dev
+
+vite project is created. copy localhost and run it on browser.
+in folder notice that the extension is app.jsx
