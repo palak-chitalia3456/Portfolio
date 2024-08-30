@@ -63,15 +63,18 @@
 
       let cardNodeList = document.querySelectorAll('.card')
 
-    //   console.log(cardNodeList)
+       //console.log(cardNodeList)
 
 
       for(let i=0 ;i<cardNodeList.length ; i++){
         cardNodeList[i].addEventListener('dblclick', function(e){
-             let classTobeAttached = e.currentTarget.getAttribute('data-color')
-             e.currentTarget.classList.add(classTobeAttached)
+            console.log(e)
+               // console.log('card clicked', cardNodeList[i]) //specifies that all the card have their event listener  
+    //          let classTobeAttached = e.currentTarget.getAttribute('data-color')
+    //          e.currentTarget.classList.add(classTobeAttached)
 
-             e.currentTarget.setAttribute('data-color' , 'used')
+    //          e.currentTarget.setAttribute('data-color' , 'used')
 
         })
       }
+    </script>

@@ -15,4 +15,5 @@ When using the addEventListener() method, the JavaScript is separated from the H
 You can easily remove an event listener by using the removeEventListener() method.
 
 2-> Event Object -> we will write just -> (e) 
-    explained in 5.html file
+    explained in 5.html file 
+    an event object will actually let you identify a single card with all of its properties.
