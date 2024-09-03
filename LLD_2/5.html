@@ -89,11 +89,33 @@
 length: 5
 value: "card try test data blue"
 above aoutput is of classlist*/
-             e.currentTarget.setAttribute('data-color' , 'used')
+             e.currentTarget.setAttribute('data-color' , 'used') //set attribute to used 
              //above statement will change attribute value to used from color name because we are adding color name as class 
              //in card every time we double click. and the data-color attribute remains as the color mentioned
              //so this is not a good way of working so we changed the data-color attribute to used
+             //dom or javascript restricts the use of same class again and again in an element that's why blue class only appeared once 
+             //even after clicking it many times
+             //here in css the class name which comes later will override the property of previous class 
 
         })
       }
+      
     </script>
+<!-- We only use "e" object when we want to work on properties or attributes of element(target current element)-->
+ <!-- we only use node list when we want to change or add something on html (target or return something on html) -->
+    <!-- we can do above using condition below is pseudo code-->
+     <!-- 
+    let condition = false
+    if(condition=false)
+    {
+        add event listener(function(e){
+        Apply blue color
+        change the condition to true
+        })
+    }
+    else if(condition = true)
+    {
+        apply white color
+        condition=false
+    }
+     -->
