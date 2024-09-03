@@ -69,11 +69,30 @@
       for(let i=0 ;i<cardNodeList.length ; i++){
         cardNodeList[i].addEventListener('dblclick', function(e){
             console.log(e) //the object e gets all the details of the events that happens
-               // console.log('card clicked', cardNodeList[i]) //specifies that all the card have their event listener  
-    //          let classTobeAttached = e.currentTarget.getAttribute('data-color')
-    //          e.currentTarget.classList.add(classTobeAttached)
+            //by clicking on card a mouse event has happened so it will show in console with properties of event that has happened
+            //when we use the event obj we are able to specifically identify a particular div or element where event is happening with all of details so that we can handle that event in an efficient way
+               //console.log('card clicked', cardNodeList[i]) //specifies that all the card have their event listener  
+            //how can we access any property from object? -> 1) "."(dot) notation ex-> console.log(e.currentTarget) (the current target property will give you the entire element where you are actually registering the element or doing the event)this will show the target name of any event that occured current
+            //2) "[]"(bracket) 
 
-    //          e.currentTarget.setAttribute('data-color' , 'used')
+             let classTobeAttached = e.currentTarget.getAttribute('data-color') //getattribute method to get the value of attribute in current target and through that we get the color
+             //console.log(classTobeAttached)
+            e.currentTarget.classList.add(classTobeAttached) //we have added the color class we get from getattribute using classlist method of event object
+             //classlist - is a property which have all the collection of classes that are attached with a specific element
+            //console.log(e.currentTarget.classList)
+            /*DOMTokenList(5) ['card', 'try', 'test', 'data', 'blue', value: 'card try test data blue']
+0: "card"
+1: "try"
+2: "test"
+3: "data"
+4: "blue"
+length: 5
+value: "card try test data blue"
+above aoutput is of classlist*/
+             e.currentTarget.setAttribute('data-color' , 'used')
+             //above statement will change attribute value to used from color name because we are adding color name as class 
+             //in card every time we double click. and the data-color attribute remains as the color mentioned
+             //so this is not a good way of working so we changed the data-color attribute to used
 
         })
       }
