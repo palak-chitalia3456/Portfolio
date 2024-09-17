@@ -2,11 +2,17 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-
+import Mycomponent from "./components/Mycomponent";
+import Mycomponent2 from "./components/Mycomponent2";
+import Mycomponent3 from "./components/Mycomponent3";
 function App() {
   // const [count, setCount] = useState(0)
 
-  return <h1>Hello</h1>
+  return (
+    <div>
+      <Mycomponent /> <Mycomponent2 /> <Mycomponent3/>
+    </div>
+  );
   // (
   //   <>
   //     <div>
@@ -30,7 +36,11 @@ function App() {
   //       Click on the Vite and React logos to learn more
   //     </p>
   //   </>
-  // ) 
+  // )
 }
 
-export default App
+export default App;
+
+//the above thing is completely known as a component i.e a function and inside function there is a html code
+//and components are different section of an application
+//and components can be of different types like profile(where we store profile information),add something,contact us etc..

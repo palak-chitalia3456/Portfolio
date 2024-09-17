@@ -38,7 +38,7 @@ root is id of div tag.
 inside this root things are getting rendered
 
 main.jsx
-will create root and render app.jsx file
+will create root and render app.jsx file. and then we will render the app component method.
 
 app.jsx
 will add element that will connect in main.jsx file and main will render and create root
@@ -71,3 +71,41 @@ whereas framework is a whole project/apllication itself which applies on whole p
 2->functional Programming - HOF->map,filter,reduce,polyfills
 3-> oop's concept- classes,constructor,this keyword,prototype and prototype inheritance can apply bind and polyfills
 4->Async - callback,promises,async await,polyfills of( promise.all,promise.any),promise methods(.all,.race,.any,.allsettled,combinators)
+
+
+component - component definition is on app.jsx file
+component source-> under src folder->component folder(component name.jsx)because component name is also a javascript file
+rules to create a component
+- always starts with a captial letter
+- always keep the function name as component name (for good practice)
+
+we need a way to adjust the component data in app.jsx file because app file is getting rendered and to display component data 
+we have to 
+-export component.jsx file in app.jsx
+
+
+Steps to export
+-> write export default mycomponent in mycomponent.jsx file at the end
+"why default?" -> because we only have one component and default keyword will make sure that we can use it anywhere in appilcation
+
+Steps to import 
+-> write import and component_name where you want to use this commponent {import Mycomponent from "./components/Mycomponent";}
+
+after creating more than one component and importing it we get an error that jsx expression must have a parent element 
+means like a section which have them inside it i.e div tag which contains this component element. or a react fragment(will discuss later)
+
+
+before return statement in component we can write any javascript code life declaration , calling function
+
+
+* what if we write <Mycomponent/> in main.jsx instead of <App/>?
+- so after this mycomponent will become a parent and we have to add all the components under mycomponent file.
+
+
+//shortcut through react extension
+rfce -> shortcut to a readymade snippet for a react component
+rcc -> shortcut to a react class based component snippet
+
+
+Component Reusability
+-
