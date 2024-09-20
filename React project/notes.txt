@@ -108,4 +108,8 @@ rcc -> shortcut to a react class based component snippet
 
 
 Component Reusability
--
+-pasting <component/> more than one time with different data in app.jsx
+to print different data we will use props(properties). we can pass data,function etc in props 
+
+props
+- props works as an object in react. so what we will do is pass props in component function as object in Mycomponent.jsx file

@@ -5,12 +5,24 @@
 import Mycomponent from "./components/Mycomponent";
 import Mycomponent2 from "./components/Mycomponent2";
 import Mycomponent3 from "./components/Mycomponent3";
+import Event from "./components/Event";
+
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Mycomponent /> <Mycomponent2 /> <Mycomponent3/>
+      {/* passing name as property in Mycomponent tag and writing different name by this only data is changing but the 
+      design/component remains same */}
+      {/* we have to pass array as an object in jsx file because they are already as an object */}
+      {/* <Mycomponent  name='Palak' cars={['baleno',' ertigaa']}/>
+      
+      <Mycomponent name='Dhyey' cars={['baleno',' ertigaa']}/>
+      <Mycomponent name='Raj' cars={['baleno',' ertigaa']}/>
+      <Mycomponent name='Mitali' cars={['baleno',' ertigaa']}/>
+      <Mycomponent2 /> <Mycomponent3/> */}
+      {/* event handling */}
+      <Event/>
     </div>
   );
   // (
